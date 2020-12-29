@@ -1,0 +1,82 @@
+.header {
+  height: 100%;
+  color:  $base-color-gray;
+
+  .tools {
+    line-height: 50px;
+
+    .left {
+      height:     50px;
+      text-align: left;
+      position:   relative;
+
+      .el-icon-s-fold {
+        font-size: $font-size-huge * 1.5;
+        cursor:    pointer;
+        @include toCenter;
+      }
+    }
+
+    .center {
+      height: 50px;
+
+      .el-breadcrumb {
+        height:      100%;
+        line-height: 50px;
+      }
+    }
+
+    .right {
+      height: 50px;
+
+      .el-input {
+        width: 90%;
+      }
+
+      .el-col {
+        text-align: center;
+
+        .fa {
+          cursor: pointer;
+        }
+
+        .avatar {
+          height:        40px;
+          width:         40px;
+          border-radius: 10px;
+          transform:     translateY(5px);
+        }
+      }
+    }
+  }
+
+  .nav {
+    background-color: $base-color-white;
+    height:           30px;
+    box-shadow:       0 5px 10px 0 lighten($base-color-black, 60%);
+    z-index:          999;
+    padding-left:     10px;
+
+
+    .el-col {
+      .el-tag {
+        margin-right: .5em;
+        transform:    translateY(3px);
+        cursor:       pointer;
+      }
+    }
+  }
+
+}
+
+.el-dropdown-menu {
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/deep/ .el-badge__content.is-fixed {
+  transform: translateY(3px) translateX(100%);
+}
+
